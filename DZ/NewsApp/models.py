@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import Sum
+from django.urls import reverse
 
 
 class Author(models.Model):
@@ -42,6 +43,11 @@ class Post(models.Model):
     rating = models.SmallIntegerField(default=0)
     postCategory = models.ManyToManyField(Category, through='PostCategory')
 
+    def __str__(self):
+        return f'Вы опубликовали {self.categoryType}: {self.title}'
+
+    def get_absolute_url(self):
+        return reverse('post_detail', args=[str(self.id)])
 
     def like(self):
         self.rating += 1
@@ -53,9 +59,6 @@ class Post(models.Model):
 
     def preview(self):
         return self.content[:123] + '...'
-
-    def __str__(self):
-        return (f'Дата создания статьи {self.dateCreations.strftime("%d %m %Y")} {self.title}: {self.content}')
 
 
 class PostCategory(models.Model):
