@@ -20,3 +20,5 @@ class ArticleForm(forms.ModelForm):
                   'postCategory',
                   'author',
                   ]
+
+
