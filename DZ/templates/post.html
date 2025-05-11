@@ -10,10 +10,6 @@
 
 {% block content %}
    <h1>Все новости</h1>
-   <form action="" method="get">
-       {{ filterset.form.as_p }}
-       <input type="submit" value="Найти" />
-   </form>
     <h3>Всего новостей {{ post|length}}</h3>
    {% if post %}
         <table>

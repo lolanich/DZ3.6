@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 from .forms import NewsForm, ArticleForm
 from .models import Post
 from .filter import NewsFilter
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, render
 
 
 class PostList(ListView):
@@ -95,3 +95,30 @@ class ArticleDelete(DeleteView):
 
     def get_object(self, queryset=None):
         return get_object_or_404(Post, categoryType='article', id=self.kwargs['pk'])
+
+
+def search_news(request):
+    query = request.GET.get('query', '')
+    author = request.GET.get('author', '')
+    date_after = request.GET.get('date_after', '')
+
+    posts_queryset = Post.objects.all()
+
+    if query:
+        posts_queryset = posts_queryset.filter(title__icontains=query)
+
+    if author:
+        posts_queryset = posts_queryset.filter(
+            author__name__icontains=author)
+
+    if date_after:
+        posts_queryset = posts_queryset.filter(dateCreations__gte=date_after)
+
+    context = {
+        'posts': posts_queryset,
+        'query': query,
+        'author': author,
+        'date_after': date_after,
+    }
+
+    return render(request, 'post_search.html', context)
