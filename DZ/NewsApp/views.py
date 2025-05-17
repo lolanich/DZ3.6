@@ -1,4 +1,7 @@
 import datetime
+
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import (
     ListView, DetailView, CreateView, UpdateView, DeleteView
 )
@@ -7,6 +10,8 @@ from .forms import NewsForm, ArticleForm
 from .models import Post
 from .filter import NewsFilter
 from django.shortcuts import get_object_or_404, render
+from django.utils.decorators import method_decorator
+from django.contrib.auth.mixins import PermissionRequiredMixin
 
 
 class PostList(ListView):
@@ -33,7 +38,8 @@ class PostDetail(DetailView):
     context_object_name = 'post'
 
 
-class NewsCreate(CreateView):
+class NewsCreate(CreateView, PermissionRequiredMixin):
+    permission_required = '<NewsApp>.<add>_<post>'
     form_class = NewsForm
     model = Post
     template_name = 'post_edit.html'
@@ -46,7 +52,8 @@ class NewsCreate(CreateView):
         return super().form_valid(form)
 
 
-class ArticleCreate(CreateView):
+class ArticleCreate(CreateView, PermissionRequiredMixin):
+    permission_required = '<NewsApp>.<add>_<post>'
     form_class = ArticleForm
     model = Post
     template_name = 'post_edit.html'
@@ -59,7 +66,8 @@ class ArticleCreate(CreateView):
         return super().form_valid(form)
 
 
-class NewsUpdate(UpdateView):
+class NewsUpdate(LoginRequiredMixin, UpdateView, PermissionRequiredMixin):
+    permission_required = '<NewsApp>.<change>_<post>'
     form_class = NewsForm
     model = Post
     template_name = 'post_edit.html'
@@ -69,7 +77,8 @@ class NewsUpdate(UpdateView):
         return get_object_or_404(Post, categoryType='news', id=self.kwargs['pk'])
 
 
-class ArticleUpdate(UpdateView):
+class ArticleUpdate(LoginRequiredMixin, UpdateView,  PermissionRequiredMixin):
+    permission_required = '<NewsApp>.<change>_<post>'
     form_class = ArticleForm
     model = Post
     template_name = 'post_edit.html'
