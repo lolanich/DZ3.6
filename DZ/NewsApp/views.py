@@ -132,24 +132,4 @@ def search_news(request):
     return render(request, 'post_search.html', context)
 
 
-def category_post(request, pk):
-    category = get_object_or_404(Category, pk=pk)
-    posts = Post.objects.filter(category=category)
-    return render(request, 'your_template.html', {
-        'post': posts,
-        'category': category,
-    })
-
-
-@login_required
-def subscribe(request, category_id):
-    category = get_object_or_404(Category, id=category_id)
-    if request.method == 'POST':
-        category.subscribers.add(request.user)
-        return redirect('category_detail', pk=category.id)
-
-
-def category_detail(request, pk):
-    category = get_object_or_404(Category, pk=pk)
-    return render(request, 'post_detail.html', {'category': category})
 

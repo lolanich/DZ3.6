@@ -58,18 +58,4 @@
            ...
            <a href="?{% url_replace page=page_obj.paginator.num_pages %}">{{ page_obj.paginator.num_pages }}</a>
        {% endif %}
-   {% endif %}
-{% if user.is_authenticated %}
-    {% if user in category.subscribers.all %}
-        <p>Вы уже подписаны</p>
-    {% else %}
-        <form method="post" action="{% url 'subscribe' category.id %}">
-            {% csrf_token %}
-            <button type="submit">Подписаться</button>
-        </form>
-    {% endif %}
-{% else %}
-    <p>Войдите в аккаунт, чтобы подписаться</p>
-{% endif %}
-
 {% endblock content %}

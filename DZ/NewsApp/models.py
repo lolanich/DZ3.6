@@ -66,37 +66,6 @@ class Post(models.Model):
         return self.content[:123] + '...'
 
 
-def send_news_email_to_user(user, post):
-    subject = post.title
-
-    html_content = f"<h1>{post.title}</h1>{post.content}"
-
-    preview_text = post.content[:50]
-
-    text_content = f"Здравствуй, {user.username}. Новая статья в твоём любимом разделе!\n\n" \
-                   f"{strip_tags(html_content)[:50]}..."
-
-    message_body = f"<!DOCTYPE html><html><body>{html_content}</body></html>"
-
-    send_mail(
-        subject,
-        text_content,
-        't.maill@yandex.ru',
-        [user.email],
-        html_message=message_body,
-        fail_silently=False,
-    )
-
-
-@receiver(post_save, sender=Post)
-def send_news_email(self, instance, created, **kwargs):
-    if created:
-        category = instance.category
-        subscribers = category.subscribers.all()
-        for user in subscribers:
-            send_news_email_to_user(user, instance)
-
-
 class PostCategory(models.Model):
     postThrough = models.ForeignKey(Post, on_delete=models.CASCADE)
     categoryTrough = models.ForeignKey(Category, on_delete=models.CASCADE)
