@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1fe0ee6d-ab82-4f10-a479-c243fd74cbb1" name="Changes" comment="/">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2025_7_33_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/DZ/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/DZ/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/DZ/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/DZ/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/DZ/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/filter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/migrations/0002_category_subscribers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/templatetags/custom_filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/templatetags/custom_tags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/NewsApp/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/protect/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/protect/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/protect/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/protect/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/protect/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/protect/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/protect/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/protect/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/sign/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/sign/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/sign/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/sign/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/sign/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/sign/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/sign/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/sign/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/static/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/account/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/appointment/appointment_created.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/appointment/make_appointment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/flatpages/default.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/flatpages/post_search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/post_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/post_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/post_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/post_search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/protect/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/sign/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/sign/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ/templates/sign/signup.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2wBg9nbjDXcqMKXZ3OpVrqo3l1Z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Direktoria/DZ3.6",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory"
+    ]
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1fe0ee6d-ab82-4f10-a479-c243fd74cbb1" name="Changes" comment="" />
+      <created>1745520231441</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745520231441</updated>
+    </task>
+    <task id="LOCAL-00001" summary="/">
+      <option name="closed" value="true" />
+      <created>1746592045347</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746592045347</updated>
+    </task>
+    <task id="LOCAL-00002" summary="/">
+      <option name="closed" value="true" />
+      <created>1746999389147</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746999389147</updated>
+    </task>
+    <task id="LOCAL-00003" summary="/">
+      <option name="closed" value="true" />
+      <created>1747440465555</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747440465555</updated>
+    </task>
+    <task id="LOCAL-00004" summary="/">
+      <option name="closed" value="true" />
+      <created>1747440605303</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747440605303</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="/" />
+    <option name="LAST_COMMIT_MESSAGE" value="/" />
+  </component>
+</project>

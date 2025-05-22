@@ -1,0 +1,21 @@
+{% extends 'flatpages/default.html' %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, instal-scale=1.0">
+     <title>Создать обращение</title>
+</head>
+<body>
+<h1>Создать обращение</h1>
+<form action="{% url 'appointments:make_appointment' %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="client_name">Ваше имя</label>
+    <input type="text" name="client_name"><br>
+    <label for="message">Опишите Вашу проблему</label>
+    <input type="text" name="message"><br>
+    <label for="date">Выбери дату</label>
+    <input type="date" name="date">.<br>
+    <input type="submit">
+</form>
+</body>
+</html>
